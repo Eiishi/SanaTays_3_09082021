@@ -7,6 +7,29 @@ $color-bg: #f1f1f1cb;
 
 /*variables couleurs*/
 
+$breakpoints: (670px, 800px, 1050px);
+
+@mixin desktop {
+  @media (min-width: nth($breakpoints,3)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: nth($breakpoints,2)) {
+    @content;
+  }
+}
+
+@mixin tablet__small {
+  @media (min-width: nth($breakpoints,1)) {
+    @content;
+  }
+}
+
+/*outils responsive*/
+
+
 /*BASE -------------------------------------------------*/
 
 @font-face {
@@ -32,6 +55,7 @@ body {
 
 header {
   text-align: center;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -47,6 +71,11 @@ footer {
   ul {
     list-style: none;
     margin-left: -30px;
+    @include desktop {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    } 
   }
   .fas {
     margin: 0px 15px 0px 0px;
@@ -60,8 +89,7 @@ footer {
   }
 }
 
-
-/*PAGES ------------------------------------------------*/
+/*header, footer*/
 
 .container {
   display: flex;
@@ -72,8 +100,6 @@ footer {
 }
 
 /*mise en ligne de tout ce qui doit l'être*/
-
-/*COMPONENTS -------------------------------------------*/
 
 .intro {
   text-align: center;
@@ -109,7 +135,9 @@ footer {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
 }
 
-.etapes {
+/*fonctionnement*/
+
+.steps {
   margin: 10px;
   .container {
     background-color: $color-bg;
@@ -118,10 +146,21 @@ footer {
     border-radius: 20px;
     position: relative;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.137);
+    @include desktop {
+      width: 30%;
+    };
   }
   .fas {
-    margin: 20px 30px;
+    margin: 15px 30px;
     color: lighten(black, 40%);
+    font-size: 1.3rem;
+
+  }
+  &__list {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+    };
   }
 }
 
@@ -137,14 +176,17 @@ footer {
   border-radius: 20px;
 }
 
+/*restaurants*/
+
 .restaurants {
+  margin-top: 80px;
   background-color: $color-bg;
   padding: 30px;
   .container {
     padding: 0px 15px;
     justify-content: space-between;
     align-items: center;
-    &__lieu {
+    &__place {
       color: darken($color-bg, 85%);
       margin-top: -10px;
     }
@@ -156,12 +198,20 @@ footer {
     object-fit: cover;
     
   }
-  &__carte {
+  &__cards {
+    @include tablet__small {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    };
+  }
+  &__card {
     background-color: white;
     margin: 20px 0px;
     border-radius: 20px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.233);
     position: relative;
+    width: 100%;
     > p {
       position: absolute;
       top: 0px;
@@ -173,6 +223,11 @@ footer {
       padding: 10px;
       width: 90px;
       text-align: center;
+    }
+    @include desktop {
+      width: unset;
+      min-width: 375px;
+      margin: 20px 20px;
     }
   }
   .far {

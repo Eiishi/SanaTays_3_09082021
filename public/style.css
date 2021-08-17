@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*UTILS ------------------------------------------------*/
 /*variables couleurs*/
+/*outils responsive*/
 /*BASE -------------------------------------------------*/
 @font-face {
   font-family: "Roboto-Regular";
@@ -22,6 +23,7 @@ body {
 /*police définie*/
 header {
   text-align: center;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -39,6 +41,13 @@ footer ul {
   list-style: none;
   margin-left: -30px;
 }
+@media (min-width: 1050px) {
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer .fas {
   margin: 0px 15px 0px 0px;
   font-size: 0.9rem;
@@ -50,7 +59,7 @@ footer li {
   margin: 10px;
 }
 
-/*PAGES ------------------------------------------------*/
+/*header, footer*/
 .container {
   display: flex;
 }
@@ -60,7 +69,6 @@ footer li {
 }
 
 /*mise en ligne de tout ce qui doit l'être*/
-/*COMPONENTS -------------------------------------------*/
 .intro {
   text-align: center;
   margin-bottom: 50px;
@@ -95,10 +103,11 @@ footer li {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
 }
 
-.etapes {
+/*fonctionnement*/
+.steps {
   margin: 10px;
 }
-.etapes .container {
+.steps .container {
   background-color: #f1f1f1cb;
   margin: 20px 10px;
   padding: 10px;
@@ -106,9 +115,21 @@ footer li {
   position: relative;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.137);
 }
-.etapes .fas {
-  margin: 20px 30px;
+@media (min-width: 1050px) {
+  .steps .container {
+    width: 30%;
+  }
+}
+.steps .fas {
+  margin: 15px 30px;
   color: #666666;
+  font-size: 1.3rem;
+}
+@media (min-width: 1050px) {
+  .steps__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .number {
@@ -123,7 +144,9 @@ footer li {
   border-radius: 20px;
 }
 
+/*restaurants*/
 .restaurants {
+  margin-top: 80px;
   background-color: #f1f1f1cb;
   padding: 30px;
 }
@@ -132,7 +155,7 @@ footer li {
   justify-content: space-between;
   align-items: center;
 }
-.restaurants .container__lieu {
+.restaurants .container__place {
   color: rgba(24, 24, 24, 0.7960784314);
   margin-top: -10px;
 }
@@ -142,14 +165,22 @@ footer li {
   height: 250px;
   object-fit: cover;
 }
-.restaurants__carte {
+@media (min-width: 670px) {
+  .restaurants__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.restaurants__card {
   background-color: white;
   margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.233);
   position: relative;
+  width: 100%;
 }
-.restaurants__carte > p {
+.restaurants__card > p {
   position: absolute;
   top: 0px;
   right: 20px;
@@ -160,6 +191,13 @@ footer li {
   padding: 10px;
   width: 90px;
   text-align: center;
+}
+@media (min-width: 1050px) {
+  .restaurants__card {
+    width: unset;
+    min-width: 375px;
+    margin: 20px 20px;
+  }
 }
 .restaurants .far {
   font-size: 1.8rem;
