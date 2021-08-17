@@ -40,13 +40,13 @@ header {
   text-align: center;
   margin-bottom: 50px;
   padding-bottom: 60px;
-  background-color: #f1f1f1;
+  background-color: #f1f1f1cb;
 }
 .intro .container {
   margin-bottom: 15px;
   justify-content: center;
-  background-color: #dddddd;
-  border-top: 3px #bebebe solid;
+  background-color: rgba(221, 221, 221, 0.7960784314);
+  border-top: 3px rgba(190, 190, 190, 0.7960784314) solid;
 }
 .intro h2 {
   font-size: 1.7rem;
@@ -67,6 +67,35 @@ header {
   height: 25px;
   padding: 12px;
   padding-top: 15px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
+}
+
+.etapes {
+  margin: 10px;
+}
+.etapes .container {
+  background-color: #f1f1f1cb;
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.137);
+}
+.etapes .fas {
+  margin: 20px 30px;
+  color: #666666;
+}
+
+.number {
+  font-size: 0.9rem;
+  position: absolute;
+  left: -15px;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  padding: 5px;
+  width: 18px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

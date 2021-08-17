@@ -32,7 +32,7 @@ header {
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-bg: #f1f1f1;
+$color-bg: #f1f1f1cb;
 
 /*variables couleurs*/
 
@@ -81,4 +81,34 @@ $color-bg: #f1f1f1;
   height: 25px;
   padding: 12px;
   padding-top: 15px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
 }
+
+.etapes {
+  margin: 10px;
+  .container {
+    background-color: $color-bg;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.137);
+  }
+  .fas {
+    margin: 20px 30px;
+    color: lighten(black, 40%);
+  }
+}
+
+.number {
+  font-size: 0.9rem;
+  position: absolute;
+  left: -15px;
+  color: white;
+  background-color: $color-primary;
+  text-align: center;
+  padding: 5px;
+  width: 18px;
+  border-radius: 20px;
+}
+
