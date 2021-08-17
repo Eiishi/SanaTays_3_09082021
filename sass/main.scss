@@ -1,19 +1,84 @@
+/*BASE -------------------------------------------------*/
+
 @font-face {
-    font-family: "Roboto-Regular";
-    src: url("../polices/Roboto-Regular.ttf") format("truetype");
-  }
-  
+  font-family: "Roboto-Regular";
+  src: url("../polices/Roboto-Regular.ttf") format("truetype");
+}
+
 @font-face {
-      font-family: "Shrikhand-Regular";
-      src: url("../polices/Shrikhand-Regular.ttf") format("truetype");
-    }
-  
-  h1, h4 {
-      font-family: "Shrikhand-Regular";
-  }
-  
-  body {
-    font-family: "Roboto-Regular";
+    font-family: "Shrikhand-Regular";
+    src: url("../polices/Shrikhand-Regular.ttf") format("truetype");
   }
 
-  /*police définie*/
+h1, h4 {
+    font-family: "Shrikhand-Regular";
+}
+
+body {
+  font-family: "Roboto-Regular";
+  margin: 40px 40px 40px 40px;
+}
+
+/*police définie*/
+
+header {
+  text-align: center;
+}
+
+/*paramètres logo*/
+
+/*UTILS ------------------------------------------------*/
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-bg: #f1f1f1;
+
+/*variables couleurs*/
+
+/*PAGES ------------------------------------------------*/
+
+.container {
+  display: flex;
+}
+
+.fas {
+  margin: 15px 15px;
+}
+
+/*mise en ligne de tout ce qui doit l'être*/
+
+/*COMPONENTS -------------------------------------------*/
+
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 60px;
+  background-color: $color-bg;
+  .container {
+    margin-bottom: 15px;
+    justify-content: center;
+    background-color: darken($color-bg, 8%);
+    border-top: 3px darken($color-bg, 20%) solid;
+  }
+  h2 {
+    font-size: 1.7rem;
+    margin: 30px 50px 10px 50px;
+   + p {
+    color: rgba($color: #000000, $alpha: 0.7);
+    margin: 30px 30px;
+    font-size: 1.1rem;
+   }
+  }
+}
+
+.btn {
+  margin: auto;
+  background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+  color: white;
+  border-radius: 40px;
+  width: 210px;
+  height: 25px;
+  padding: 12px;
+  padding-top: 15px;
+}
