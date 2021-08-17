@@ -1,3 +1,12 @@
+/*UTILS ------------------------------------------------*/
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-bg: #f1f1f1cb;
+
+/*variables couleurs*/
+
 /*BASE -------------------------------------------------*/
 
 @font-face {
@@ -25,16 +34,32 @@ header {
   text-align: center;
 }
 
-/*paramètres logo*/
+footer {
+  background-color: darken($color-bg, 95%);
+  color: white;
+  padding: 20px;
+  h4 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+  ul {
+    list-style: none;
+    margin-left: -30px;
+  }
+  .fas {
+    margin: 0px 15px 0px 0px;
+    font-size: 0.9rem;
+  }
+  p {
+    margin: 0px;
+  }
+  li {
+    margin: 10px;
+  }
+}
 
-/*UTILS ------------------------------------------------*/
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-bg: #f1f1f1cb;
-
-/*variables couleurs*/
 
 /*PAGES ------------------------------------------------*/
 
@@ -149,5 +174,10 @@ $color-bg: #f1f1f1cb;
       width: 90px;
       text-align: center;
     }
+  }
+  .far {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: darken($color-bg, 85%);
   }
 }

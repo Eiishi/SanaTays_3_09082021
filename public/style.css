@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*UTILS ------------------------------------------------*/
+/*variables couleurs*/
 /*BASE -------------------------------------------------*/
 @font-face {
   font-family: "Roboto-Regular";
@@ -22,9 +24,32 @@ header {
   text-align: center;
 }
 
-/*paramètres logo*/
-/*UTILS ------------------------------------------------*/
-/*variables couleurs*/
+footer {
+  background-color: rgba(0, 0, 0, 0.7960784314);
+  color: white;
+  padding: 20px;
+}
+footer h4 {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+footer ul {
+  list-style: none;
+  margin-left: -30px;
+}
+footer .fas {
+  margin: 0px 15px 0px 0px;
+  font-size: 0.9rem;
+}
+footer p {
+  margin: 0px;
+}
+footer li {
+  margin: 10px;
+}
+
 /*PAGES ------------------------------------------------*/
 .container {
   display: flex;
@@ -135,6 +160,11 @@ header {
   padding: 10px;
   width: 90px;
   text-align: center;
+}
+.restaurants .far {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: rgba(24, 24, 24, 0.7960784314);
 }
 
 /*# sourceMappingURL=style.css.map */
