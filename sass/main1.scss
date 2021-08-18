@@ -7,6 +7,36 @@ $color-bg: #e9e9e9;
 
 /*variables couleurs*/
 
+
+$breakpoints: (670px, 800px, 1050px, 1345px);
+
+@mixin largest {
+    @media (min-width: nth($breakpoints,4)) {
+      @content;
+    }
+}
+
+@mixin desktop {
+  @media (min-width: nth($breakpoints,3)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: nth($breakpoints,2)) {
+    @content;
+  }
+}
+
+@mixin tablet__small {
+  @media (min-width: nth($breakpoints,1)) {
+    @content;
+  }
+}
+
+
+/*outils responsive*/
+
 /*BASE -------------------------------------------------*/
 
 @font-face {
@@ -55,6 +85,11 @@ footer {
     ul {
       list-style: none;
       margin-left: -30px;
+      @include desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
     .fas {
       margin: 0px 15px 0px 0px;
@@ -128,6 +163,13 @@ h2 {
     p {
         color: darken($color-bg, 65%);
         margin-top: 0px;
+    }
+    @include largest {
+        display: flex;
+        justify-content: space-between;
+    }
+    > div {
+        margin: 0px 50px;
     }
 }
 
