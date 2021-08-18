@@ -3,7 +3,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-bg: #f1f1f1cb;
+$color-bg: #e9e9e9;
 
 /*variables couleurs*/
 
@@ -59,7 +59,7 @@ header {
 }
 
 footer {
-  background-color: darken($color-bg, 95%);
+  background-color: darken($color-bg, 72%);
   color: white;
   padding: 20px;
   h4 {
@@ -87,6 +87,11 @@ footer {
   li {
     margin: 10px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: black; 
 }
 
 /*header, footer*/

@@ -1,0 +1,149 @@
+/*UTILS ------------------------------------------------*/
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-bg: #e9e9e9;
+
+/*variables couleurs*/
+
+/*BASE -------------------------------------------------*/
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../polices/Roboto-Regular.ttf") format("truetype");
+  }
+  
+@font-face {
+    font-family: "Shrikhand-Regular";
+    src: url("../polices/Shrikhand-Regular.ttf") format("truetype");
+}
+  
+h1, h4 {
+    font-family: "Shrikhand-Regular";
+}
+  
+body {
+    font-family: "Roboto-Regular";
+    margin: 40px 40px 40px 40px;
+}
+  
+  /*police, marge définies*/
+  
+header {
+    margin-bottom: 10px;
+    .fas {
+        margin-top: 15px;
+        font-size: 1.4rem;
+    }
+    img {
+        margin: auto;
+        height: 50px;
+    }
+}
+  
+footer {
+    background-color: darken($color-bg, 72%);
+    color: white;
+    padding: 20px;
+    h4 {
+      margin-top: 5px;
+      margin-left: 10px;
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+    ul {
+      list-style: none;
+      margin-left: -30px;
+    }
+    .fas {
+      margin: 0px 15px 0px 0px;
+      font-size: 0.9rem;
+    }
+    p {
+      margin: 0px;
+    }
+    li {
+      margin: 10px;
+    }
+    .container {
+        justify-content: unset;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+  
+  /*header, footer*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main img {
+    width: 100%;
+    object-fit: cover;
+    height: 380px;
+}
+
+.menu {
+    background: $color-bg;
+    border-radius: 40px 40px 0px 0px;
+    padding: 20px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    .far {
+        font-size: 2rem;
+        margin: 25px;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: darken($color-bg, 50%);
+    border-bottom: 4px $color-tertiary solid;
+    padding-bottom: 5px;
+}
+
+.cards {
+    .container {
+        align-items: center;
+        background-color: white;
+        margin: 20px 0px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.233);
+        padding: 10px;
+        width: 96%;
+        height: 60px;
+    }
+    .price {
+        color: black;
+        margin: 30px 10px 0px 10px;
+    }
+    p {
+        color: darken($color-bg, 65%);
+        margin-top: 0px;
+    }
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin: 40px auto;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    width: 210px;
+    height: 25px;
+    padding: 12px;
+    padding-top: 15px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
+}
