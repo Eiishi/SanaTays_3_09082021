@@ -3,11 +3,11 @@
 /*outils responsive*/
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../Roboto-Regular.ttf") format("truetype");
+  src: url("../asset/Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("../Shrikhand-Regular.ttf") format("truetype");
+  src: url("../asset/Shrikhand-Regular.ttf") format("truetype");
 }
 h1, h4 {
   font-family: "Shrikhand-Regular";
