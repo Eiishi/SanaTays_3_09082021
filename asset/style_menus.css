@@ -3,11 +3,11 @@
 /*outils responsive*/
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../polices/Roboto-Regular.ttf") format("truetype");
+  src: url("../Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Shrikhand-Regular";
-  src: url("../polices/Shrikhand-Regular.ttf") format("truetype");
+  src: url("../Shrikhand-Regular.ttf") format("truetype");
 }
 h1, h4 {
   font-family: "Shrikhand-Regular";
@@ -163,4 +163,4 @@ a {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
 }
 
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=style_menus.css.map */
