@@ -1,0 +1,25 @@
+@mixin largest {
+  @media (min-width: nth($breakpoints,4)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+    @media (min-width: nth($breakpoints,3)) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: nth($breakpoints,2)) {
+      @content;
+    }
+  }
+  
+  @mixin tablet__small {
+    @media (min-width: nth($breakpoints,1)) {
+      @content;
+    }
+  }
+
+  /*outils responsive*/

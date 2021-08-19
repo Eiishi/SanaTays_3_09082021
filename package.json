@@ -4,7 +4,7 @@
   "description": "SanaTays_3_09082021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/style.css"
+    "sass": "sass --watch ./asset/main_accueil.scss:./asset/style_accueil.css"
   },
   "repository": {
     "type": "git",
