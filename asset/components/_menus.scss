@@ -10,10 +10,6 @@ header {
     }
 }
 
-.container {
-    justify-content: space-between;
-}
-
 main img {
     width: 100%;
     object-fit: cover;
@@ -30,6 +26,9 @@ main img {
     .far {
         font-size: 2rem;
         margin: 25px;
+    }
+    > .container {
+        justify-content: space-between;
     }
 }
 
@@ -48,6 +47,7 @@ h2 {
 
 .cards {
     .container {
+        justify-content: space-between;
         align-items: center;
         background-color: white;
         margin: 20px 0px;
@@ -65,12 +65,16 @@ h2 {
         color: darken($color-bg, 65%);
         margin-top: 0px;
     }
+    > div {
+        margin: 0px 50px;
+    }
     @include largest {
         display: flex;
         justify-content: space-between;
-    }
-    > div {
-        margin: 0px 50px;
+        > div {
+            margin: 0px 15px;
+            width: 30%
+        }
     }
 }
 

@@ -70,10 +70,6 @@ header img {
   height: 50px;
 }
 
-.container {
-  justify-content: space-between;
-}
-
 main img {
   width: 100%;
   object-fit: cover;
@@ -92,6 +88,9 @@ main img {
   font-size: 2rem;
   margin: 25px;
 }
+.menu > .container {
+  justify-content: space-between;
+}
 
 h2 {
   text-transform: uppercase;
@@ -107,6 +106,7 @@ h2 + .line {
 }
 
 .cards .container {
+  justify-content: space-between;
   align-items: center;
   background-color: white;
   margin: 20px 0px;
@@ -124,14 +124,18 @@ h2 + .line {
   color: #434343;
   margin-top: 0px;
 }
+.cards > div {
+  margin: 0px 50px;
+}
 @media (min-width: 1350px) {
   .cards {
     display: flex;
     justify-content: space-between;
   }
-}
-.cards > div {
-  margin: 0px 50px;
+  .cards > div {
+    margin: 0px 15px;
+    width: 30%;
+  }
 }
 
 h3 {
@@ -161,6 +165,26 @@ a {
   padding: 12px;
   padding-top: 15px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
+}
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.heart {
+  display: none;
+}
+
+.far:hover + .heart {
+  display: initial;
+  position: absolute;
+  font-size: 35px;
+  right: 43px;
+  top: 43px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=style_menus.css.map */
