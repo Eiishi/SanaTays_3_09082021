@@ -90,11 +90,22 @@ h3 {
 }
 
 .cards .fas {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    font-size: 2rem;
     transform: rotate(0deg);
     transition: transform 0.5s ease-in;
 }
 
 .card--valid {
+    position: relative;
+    background-color: #99E2D0;
+    margin-right: -10px;
+    height: 80px;
+    width: 15%;
+    border-radius: 0px 18px 18px 0px;
     transform: translateX(100px);
     transition: transform 0.5s ease-in;
 }
@@ -104,19 +115,8 @@ h3 {
         transform: translateX(-90px);
     }
     > .card--valid {
-        position: relative;
-        background-color: #99E2D0;
-        margin-right: -10px;
-        height: 80px;
-        width: 15%;
-        border-radius: 0px 18px 18px 0px;
         transform:translateX(0px);
     .fas {
-        color: white;
-        position: absolute;
-        top: 30%;
-        left: 30%;
-        font-size: 2rem;
         transform: rotate(-360deg);
     }
 }
