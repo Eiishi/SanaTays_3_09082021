@@ -60,6 +60,10 @@ h2 {
     .price {
         color: black;
         margin: 30px 10px 0px 10px;
+        position: absolute;
+        right: 0;
+        transform: translateX(0);
+        transition: transform 0.5s ease-in;
     }
     p {
         color: darken($color-bg, 65%);
@@ -91,24 +95,23 @@ h3 {
 }
 
 .card--valid {
-    animation: card 0.5s ease-in both;
+    transform: translateX(100px);
+    transition: transform 0.5s ease-in;
 }
 
 .cards .container:hover {
     > p {
-        position: absolute;
-        right: 15%;
+        transform: translateX(-90px);
     }
     > .card--valid {
-        display: block;
         position: relative;
         background-color: #99E2D0;
         margin-right: -10px;
         height: 80px;
         width: 15%;
         border-radius: 0px 18px 18px 0px;
+        transform:translateX(0px);
     .fas {
-        display: block;
         color: white;
         position: absolute;
         top: 30%;

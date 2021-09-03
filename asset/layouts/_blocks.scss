@@ -28,19 +28,18 @@ a {
 
 .heart {
     position: absolute;
-    font-size: 32px;
-    right: 45px;
-    top: 45px;
+    font-size: 35px;
+    right: 43px;
+    top: 43px;
     color: transparent; 
-    transform:translateY(20px);
+    transform:scale(0);
     transition: transform 1s ease-in;
     overflow: hidden;
 }
 
 .far:hover {
-    color: none;
     + .heart {
-        transform: translateY(0px);
+        transform: scale(1);
         background: linear-gradient(to bottom right, $color-secondary, $color-primary);
         background-clip: text;
         -webkit-background-clip: text;
