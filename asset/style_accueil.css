@@ -18,10 +18,6 @@ body {
 }
 
 /*police définie*/
-body {
-  margin: 40px;
-}
-
 footer {
   background-color: #313131;
   color: white;
@@ -56,6 +52,14 @@ footer li {
 }
 footer ul > :nth-child(2) > :nth-child(2) {
   margin-left: -5px;
+}
+footer a {
+  color: white;
+}
+footer li:hover, footer a:hover {
+  cursor: pointer;
+  color: #9356DC;
+  text-decoration: underline;
 }
 
 header {
@@ -195,6 +199,12 @@ header {
   color: #101010;
 }
 
+.heart {
+  right: 8px;
+  bottom: 12px;
+  font-size: 33px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -205,24 +215,39 @@ a {
 }
 
 .btn {
-  margin: auto;
+  margin: 35px auto;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
+  text-align: center;
   border-radius: 40px;
   width: 210px;
   height: 25px;
   padding: 12px;
   padding-top: 15px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
+  opacity: 1;
 }
 .btn:hover {
+  opacity: 0.8;
   cursor: pointer;
-  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
-.heart:hover {
-  background-color: linear-gradient(to bottom right, #FF79DA, #9356DC);
+.heart {
+  position: absolute;
+  color: transparent;
+  transform: scale(0);
+  transition: transform 1s ease-in;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.far:hover, .heart:hover {
+  cursor: pointer;
+}
+.far:hover + .heart, .heart:hover + .heart {
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=style_accueil.css.map */

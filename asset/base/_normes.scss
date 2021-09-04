@@ -30,4 +30,12 @@ footer {
     ul >:nth-child(2)>:nth-child(2) {
       margin-left: -5px;
     }
+    a {
+      color: white;
+    }
+    li:hover, a:hover {
+      cursor: pointer;
+      color: $color-primary;
+      text-decoration: underline;
+    }
 }

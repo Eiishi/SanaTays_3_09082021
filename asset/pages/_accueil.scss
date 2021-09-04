@@ -108,7 +108,7 @@ header {
       box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.233);
       position: relative;
       width: 100%;
-      >a>p {
+      > a > p {
         position: absolute;
         top: 0px;
         right: 20px;
@@ -131,4 +131,10 @@ header {
       margin-right: 10px;
       color: darken($color-bg, 85%);
     }
+}
+
+.heart {
+  right: 8px;
+  bottom: 12px;
+  font-size: 33px;
 }

@@ -58,6 +58,7 @@ h2 {
         height: 60px;
         overflow: hidden;
         &:hover {
+            cursor: pointer;
             > .price {
                 transform: translateX(-75px);
             }
@@ -131,6 +132,12 @@ h2 {
             width: 30%
         }
     }
+}
+
+.heart {
+    right: 43px;
+    top: 43px;
+    font-size: 35px;
 }
 
 h3 {
