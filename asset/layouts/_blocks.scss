@@ -34,14 +34,14 @@ a {
     color: transparent; 
     transform:scale(0);
     transition: transform 1s ease-in;
-    overflow: hidden;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
-.far:hover {
+.far:hover, .heart:hover {
+    cursor: pointer;
     + .heart {
         transform: scale(1);
-        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-        background-clip: text;
-        -webkit-background-clip: text;
     }
 }
