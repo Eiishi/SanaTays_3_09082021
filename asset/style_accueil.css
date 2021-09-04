@@ -1,6 +1,38 @@
 @charset "UTF-8";
 /*variables couleurs*/
 /*outils responsive*/
+@keyframes menu {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0turn);
+  }
+  33% {
+    transform: rotate(1turn);
+  }
+  66% {
+    transform: rotate(2turn);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes logo {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @font-face {
   font-family: "Roboto-Regular";
   src: url("../asset/Roboto-Regular.ttf") format("truetype");
@@ -203,6 +235,60 @@ header {
   right: 8px;
   bottom: 12px;
   font-size: 33px;
+}
+
+.loader {
+  border: 16px #f3f3f3 solid;
+  border-radius: 50%;
+  border-top: 16px solid #9356DC;
+  border-left: 16px #99E2D0 solid;
+  border-right: 16px #FF79DA solid;
+  width: 120px;
+  height: 120px;
+  animation: loader 3s ease-in-out;
+}
+.loader__page {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 12;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.loader__page .container {
+  justify-content: center;
+}
+
+.logo__1 {
+  color: #99E2D0;
+}
+
+.logo__2 {
+  color: #FF79DA;
+}
+
+.logo__3 {
+  color: #9356DC;
+}
+
+.logo__1 {
+  font-family: "Shrikhand-Regular";
+  font-size: 4rem;
+  text-align: center;
+  animation: logo 0.9s ease-in-out 1;
+}
+
+.logo__2 {
+  font-family: "Shrikhand-Regular";
+  font-size: 4rem;
+  text-align: center;
+  animation: logo 0.9s ease-in-out 2;
+}
+
+.logo__3 {
+  font-family: "Shrikhand-Regular";
+  font-size: 4rem;
+  text-align: center;
+  animation: logo 0.9s ease-in-out 3;
 }
 
 a {

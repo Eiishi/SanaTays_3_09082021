@@ -138,3 +138,37 @@ header {
   bottom: 12px;
   font-size: 33px;
 }
+
+.loader {
+  border: 16px #f3f3f3 solid;
+  border-radius: 50%;
+  border-top: 16px solid $color-primary;
+  border-left: 16px $color-tertiary solid;
+  border-right: 16px $color-secondary solid;
+  width: 120px;
+  height: 120px;
+  animation: loader 3s ease-in-out;
+  &__page {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 12;
+    background-color: rgba(255, 255, 255, 0.9); 
+    .container {
+      justify-content: center;
+    }
+  }
+}
+
+.logo__1 {color:$color-tertiary}
+.logo__2 {color:$color-secondary}
+.logo__3 {color:$color-primary}
+
+@for $i from 1 to 4 {
+.logo__#{$i} {
+  font-family: "Shrikhand-Regular";
+  font-size: 4rem;
+  text-align: center;
+  animation: logo 0.9s ease-in-out $i;
+}  
+}
