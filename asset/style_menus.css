@@ -11,6 +11,28 @@
     transform: translateY(0px);
   }
 }
+@keyframes loader {
+  0% {
+    transform: rotate(0turn);
+  }
+  33% {
+    transform: rotate(1turn);
+  }
+  66% {
+    transform: rotate(2turn);
+  }
+  100% {
+    transform: translateX(1500px);
+  }
+}
+@keyframes logo {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @font-face {
   font-family: "Roboto-Regular";
   src: url("../asset/Roboto-Regular.ttf") format("truetype");
@@ -76,18 +98,18 @@ header {
   margin: 15px 0px;
 }
 header .fas {
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 1.4rem;
 }
 header img {
   margin: auto;
-  height: 50px;
+  height: 35px;
 }
 
 main img {
   width: 100%;
   object-fit: cover;
-  height: 380px;
+  height: 250px;
 }
 
 .menu {
@@ -130,6 +152,9 @@ h2 + .line {
   padding: 10px;
   height: 60px;
   overflow: hidden;
+}
+.cards .container:hover {
+  cursor: pointer;
 }
 .cards .container:hover > .price {
   transform: translateX(-75px);
@@ -212,6 +237,7 @@ h2 + .line {
 .heart {
   right: 43px;
   top: 43px;
+  font-size: 35px;
 }
 
 h3 {
@@ -248,7 +274,6 @@ a {
 
 .heart {
   position: absolute;
-  font-size: 35px;
   color: transparent;
   transform: scale(0);
   transition: transform 1s ease-in;
