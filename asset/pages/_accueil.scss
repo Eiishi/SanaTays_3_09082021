@@ -165,16 +165,11 @@ header {
   }
 }
 
-.logo__1 {color:$color-tertiary}
-.logo__2 {color:$color-secondary}
-.logo__3 {color:$color-primary}
-
-@for $i from 1 to 4 {
-.logo__#{$i} {
+.loader__logo {
   font-family: "Shrikhand-Regular";
   font-size: 4rem;
   text-align: center;
   transform: translateY(200%);
   transition: transform 0.5s 2s ease-in-out;
-}  
+  animation: logo 3s ease-in-out 0s both;
 }

@@ -27,10 +27,13 @@
 }
 @keyframes logo {
   0% {
-    transform: scale(0);
+    color: #99E2D0;
   }
-  100% {
-    transform: scale(1);
+  33% {
+    color: #FF79DA;
+  }
+  66% {
+    color: #9356DC;
   }
 }
 @font-face {
@@ -264,40 +267,13 @@ header {
   justify-content: center;
 }
 
-.logo__1 {
-  color: #99E2D0;
-}
-
-.logo__2 {
-  color: #FF79DA;
-}
-
-.logo__3 {
-  color: #9356DC;
-}
-
-.logo__1 {
+.loader__logo {
   font-family: "Shrikhand-Regular";
   font-size: 4rem;
   text-align: center;
   transform: translateY(200%);
   transition: transform 0.5s 2s ease-in-out;
-}
-
-.logo__2 {
-  font-family: "Shrikhand-Regular";
-  font-size: 4rem;
-  text-align: center;
-  transform: translateY(200%);
-  transition: transform 0.5s 2s ease-in-out;
-}
-
-.logo__3 {
-  font-family: "Shrikhand-Regular";
-  font-size: 4rem;
-  text-align: center;
-  transform: translateY(200%);
-  transition: transform 0.5s 2s ease-in-out;
+  animation: logo 3s ease-in-out 0s both;
 }
 
 a {

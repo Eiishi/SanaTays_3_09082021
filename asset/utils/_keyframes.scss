@@ -26,9 +26,12 @@
 
 @keyframes logo {
     0% {
-        transform: scale(0);
+        color:$color-tertiary;
     }
-    100% {
-        transform: scale(1);
+    33% {
+        color:$color-secondary;
+    }
+    66% {
+        color:$color-primary;
     }
 }
