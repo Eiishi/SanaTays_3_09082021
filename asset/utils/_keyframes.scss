@@ -33,6 +33,9 @@
     }
     66% {
         color:$color-primary;
+        transform: translateY(0);
+    }
+    99% {
         transform: translateY(200%);
     }
 }
