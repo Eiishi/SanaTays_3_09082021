@@ -27,10 +27,25 @@
 }
 @keyframes logo {
   0% {
-    transform: scale(0);
+    color: #99E2D0;
+  }
+  33% {
+    color: #FF79DA;
+  }
+  66% {
+    color: #9356DC;
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(200%);
+  }
+}
+@keyframes page {
+  0% {
+    visibility: visible;
   }
   100% {
-    transform: scale(1);
+    visibility: hidden;
   }
 }
 @font-face {
@@ -50,6 +65,10 @@ body {
 }
 
 /*police définie*/
+body {
+  margin: 0;
+}
+
 footer {
   background-color: #313131;
   color: white;
@@ -242,7 +261,7 @@ h2 + .line {
 .heart {
   right: 43px;
   top: 43px;
-  font-size: 35px;
+  font-size: 36px;
 }
 
 h3 {

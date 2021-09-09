@@ -39,3 +39,12 @@
         transform: translateY(200%);
     }
 }
+
+@keyframes page {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
