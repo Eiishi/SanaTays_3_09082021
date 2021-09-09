@@ -297,7 +297,7 @@ header {
 }
 @media (max-width: 375px) {
   .loader__logo {
-    font-size: 10vw;
+    font-size: 20vw;
     margin-top: 30vh;
   }
 }
@@ -336,7 +336,6 @@ a {
   transform: scale(0);
   transition: transform 1s ease-in;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
 }
 

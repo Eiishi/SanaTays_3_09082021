@@ -302,7 +302,6 @@ a {
   transform: scale(0);
   transition: transform 1s ease-in;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
 }
 

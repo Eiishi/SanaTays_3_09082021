@@ -32,7 +32,6 @@ a {
     transform:scale(0);
     transition: transform 1s ease-in;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-    background-clip: text;
     -webkit-background-clip: text;
 }
 
