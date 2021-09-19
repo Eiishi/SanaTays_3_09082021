@@ -7,24 +7,32 @@ a {
     display: flex;
 }
 
+
+/*mise en forme des boutons Explorer nos restaurants et Commander*/
+
 .btn {
     margin: 35px auto;
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     color: white;
     text-align: center;
     border-radius: 40px;
-    width: 210px;
-    height: 25px;
     padding: 12px;
     padding-top: 15px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
     opacity: 1;
+    @media (min-width: 235px) {
+        width: 210px;
+        height: 25px;    
+    }
     &:hover {
         opacity: 0.8;
         cursor: pointer;
         box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
     }
 }
+
+
+/*mise en forme des icônes coeur*/
 
 .heart {
     position: absolute;

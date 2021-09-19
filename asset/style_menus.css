@@ -69,6 +69,7 @@ body {
   margin: 0;
 }
 
+/*mise en forme footer*/
 footer {
   background-color: #313131;
   color: white;
@@ -113,6 +114,7 @@ footer li:hover, footer a:hover {
   text-decoration: underline;
 }
 
+/*header pages menus*/
 header {
   margin: 15px 0px;
 }
@@ -123,6 +125,12 @@ header .fas {
 header img {
   margin: auto;
   height: 35px;
+}
+@media (max-width: 374px) {
+  header img {
+    height: auto;
+    width: 60%;
+  }
 }
 
 main img {
@@ -153,6 +161,13 @@ main img {
   justify-content: space-between;
 }
 
+@media (max-width: 374px) {
+  h1 {
+    margin-top: 15px;
+    font-size: 10vw;
+  }
+}
+
 h2 {
   text-transform: uppercase;
   font-weight: normal;
@@ -166,6 +181,7 @@ h2 + .line {
   margin-top: -20px;
 }
 
+/*mise en forme des cartes avec les intitulés des plats + animations*/
 .cards .container {
   justify-content: space-between;
   align-items: center;
@@ -173,9 +189,16 @@ h2 + .line {
   margin: 20px 0px;
   border-radius: 20px;
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.233);
-  padding: 10px;
-  height: 60px;
+  padding: 0 10px;
   overflow: hidden;
+}
+@media (max-width: 430px) {
+  .cards .container {
+    height: 20%;
+  }
+  .cards .container:hover > .cards__description {
+    white-space: nowrap;
+  }
 }
 .cards .container:hover {
   cursor: pointer;
@@ -197,20 +220,40 @@ h2 + .line {
     width: 60%;
   }
 }
+@media (max-width: 374px) {
+  .cards .container:hover > .cards__description {
+    width: 50%;
+  }
+}
 .cards--valid {
   position: relative;
   background-color: #99E2D0;
   margin-right: -10px;
-  height: 80px;
+  height: 82px;
   width: 75px;
   border-radius: 0px 18px 18px 0px;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
 }
+@media (max-width: 430px) {
+  .cards--valid {
+    height: 124px;
+  }
+}
+@media (max-width: 374px) {
+  .cards--valid {
+    height: 185px;
+  }
+}
 .cards__description {
   width: 80%;
   transition: width 0.5s ease-in;
   white-space: nowrap;
+}
+@media (max-width: 430px) {
+  .cards__description {
+    white-space: initial;
+  }
 }
 .cards__description > h3, .cards__description p {
   text-overflow: ellipsis;
@@ -221,7 +264,7 @@ h2 + .line {
   color: black;
   margin: 30px 10px 0px 10px;
   position: absolute;
-  right: 0;
+  right: 20px;
   transform: translateX(0);
   transition: transform 0.5s ease-in;
 }
@@ -229,16 +272,20 @@ h2 + .line {
   color: #434343;
   margin-top: 0px;
 }
-.cards > div:nth-child(1) {
+
+> div:nth-child(1) {
   animation: menu 1s 0.25s ease both;
 }
-.cards > div:nth-child(2) {
+
+> div:nth-child(2) {
   animation: menu 1s 0.5s ease both;
 }
-.cards > div:nth-child(3) {
+
+> div:nth-child(3) {
   animation: menu 1s 0.75s ease both;
 }
-.cards .fas {
+
+.fa-check-circle {
   color: white;
   position: absolute;
   top: 30%;
@@ -247,17 +294,28 @@ h2 + .line {
   transform: rotate(0deg);
   transition: transform 0.5s ease-in;
 }
+@media (max-width: 430px) {
+  .fa-check-circle {
+    top: 35%;
+  }
+}
+@media (max-width: 374px) {
+  .fa-check-circle {
+    top: 40%;
+  }
+}
 @media (min-width: 1350px) {
-  .cards {
+  .fa-check-circle {
     display: flex;
     justify-content: space-between;
   }
-  .cards > div {
+  .fa-check-circle > div {
     margin: 0px 15px;
     width: 30%;
   }
 }
 
+/*icône coeur spécifique aux pages menus*/
 .heart {
   right: 43px;
   top: 43px;
@@ -277,18 +335,23 @@ a {
   display: flex;
 }
 
+/*mise en forme des boutons Explorer nos restaurants et Commander*/
 .btn {
   margin: 35px auto;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   text-align: center;
   border-radius: 40px;
-  width: 210px;
-  height: 25px;
   padding: 12px;
   padding-top: 15px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.233);
   opacity: 1;
+}
+@media (min-width: 235px) {
+  .btn {
+    width: 210px;
+    height: 25px;
+  }
 }
 .btn:hover {
   opacity: 0.8;
@@ -296,6 +359,7 @@ a {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.6);
 }
 
+/*mise en forme des icônes coeur*/
 .heart {
   position: absolute;
   color: transparent;

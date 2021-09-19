@@ -7,6 +7,9 @@ header {
     margin: 15px 15px;
 }
 
+
+/*premier bloc page d'accueil*/
+
 .intro {
     text-align: center;
     margin-bottom: 50px;
@@ -28,6 +31,9 @@ header {
      }
     }
 }
+
+
+/*mise en forme partie fonctionnement page d'accueil*/
 
 .steps {
     margin: 15px;
@@ -74,6 +80,9 @@ header {
     width: 18px;
     border-radius: 20px;
 }
+
+
+/*cartes restaurants page d'accueil*/
 
 .restaurants {
     margin-top: 80px;
@@ -138,9 +147,11 @@ header {
 
 .heart {
   right: 7px;
-  bottom: 8px;
   font-size: 33px;
 }
+
+
+/*loader page d'accueil*/
 
 .loader {
   margin: auto;
@@ -167,15 +178,14 @@ header {
       justify-content: center;
     }
   }
-}
-
-.loader__logo {
-  font-family: "Shrikhand-Regular";
-  font-size: 4rem;
-  text-align: center;
-  animation: logo 3s ease-in-out 0s both;
-  @include mini {
-    font-size: 15vw;
-    margin-top: 20vh;
+  &__logo {
+    font-family: "Shrikhand-Regular";
+    font-size: 4rem;
+    text-align: center;
+    animation: logo 3s ease-in-out 0s both;
+    @include mini {
+      font-size: 15vw;
+      margin-top: 20vh;
+    }  
   }
 }
