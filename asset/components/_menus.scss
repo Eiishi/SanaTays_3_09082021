@@ -147,11 +147,11 @@ h2 {
         color: darken($color-bg, 65%);
         margin-top: 0px;
     }
-    }
     @for $i from 1 to 4 {
         > div:nth-child(#{$i}) {
             animation: menu 1s (0s + 0.25*$i) ease both;
         }    
+    }
     }
     .fa-check-circle {
         color: white;

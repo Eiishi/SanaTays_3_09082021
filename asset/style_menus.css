@@ -272,16 +272,13 @@ h2 + .line {
   color: #434343;
   margin-top: 0px;
 }
-
-> div:nth-child(1) {
+.cards > div:nth-child(1) {
   animation: menu 1s 0.25s ease both;
 }
-
-> div:nth-child(2) {
+.cards > div:nth-child(2) {
   animation: menu 1s 0.5s ease both;
 }
-
-> div:nth-child(3) {
+.cards > div:nth-child(3) {
   animation: menu 1s 0.75s ease both;
 }
 
