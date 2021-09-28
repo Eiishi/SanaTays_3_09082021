@@ -159,6 +159,13 @@ header {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.137);
   align-items: center;
 }
+.steps .container:hover {
+  cursor: pointer;
+  background-color: #e9ddf8;
+}
+.steps .container:hover > :nth-child(2) {
+  color: #9356DC;
+}
 @media (min-width: 1050px) {
   .steps .container {
     width: 30%;
@@ -174,12 +181,6 @@ header {
     display: flex;
     justify-content: center;
   }
-}
-.steps__list > :nth-child(3) > :nth-child(2) {
-  color: #9356DC;
-}
-.steps__list > :nth-child(3) {
-  background-color: #e9ddf8;
 }
 
 .number {
@@ -275,7 +276,7 @@ header {
   height: 120px;
   animation: loader 3s ease-in-out;
 }
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .loader {
     width: 15vw;
     height: 15vw;
@@ -298,7 +299,7 @@ header {
   text-align: center;
   animation: logo 3s ease-in-out 0s both;
 }
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .loader__logo {
     font-size: 15vw;
     margin-top: 20vh;

@@ -45,6 +45,13 @@ header {
       position: relative;
       box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.137);
       align-items: center;
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($color-primary, 32%);
+        >:nth-child(2) {
+          color: $color-primary;
+        }    
+      }
       @include desktop {
         width: 30%;
       };
@@ -60,12 +67,6 @@ header {
         display: flex;
         justify-content: center;
       };
-    }
-    &__list >:nth-child(3)>:nth-child(2) {
-      color: $color-primary;
-    }
-    &__list >:nth-child(3) {
-      background-color: lighten($color-primary, 32%);
     }
 }
 
